@@ -1,0 +1,42 @@
+/* *{
+    color: green;
+}
+body{
+    background-color: gray;
+} */
+/* 
+h3{
+    background-color: black;
+    color: white;
+    text-align: center;
+} */
+ /* p{
+    color: white;
+    text-align: center;
+}
+h3{
+    color: white;
+     text-align: center;
+     // text-align: left;  
+} */
+
+  /* p,h3,h4,h5{
+    color: white;
+    text-align: center;
+} */
+/* DRY - don't repeat yourself, не повторяй сам себя или свои стили*/
+p span{
+    color: orange;
+}
+li,span{
+    color: blue;
+}
+div h3{
+color: rgb(133, 9, 144);
+}
+section h3{
+    color: rgb(81, 128, 0);
+}
+label{
+    color:yellow
+}

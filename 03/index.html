@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- git clone adress -->
+    <form >
+<p>
+    <h3>
+        <label for="username">
+            Type your name
+         </label>
+    </h3>
+   <div>
+    <input placeholder="First name" disabled id="username"  type="text">
+   </div>
+</p>
+<p>
+    <label for="lastName">
+Last Name
+    </label>
+    <input id="lastName" placeholder="lastName" type="text">
+</p>
+    
+    <p>
+        <label for="userpassword">
+Password user
+        </label>
+        <input id="userpassword"  type="password">
+    </p>
+    <p>
+        <label for="skills">
+Skills
+        </label>
+        <!-- ul,ol -->
+        <select  id="skills">
+            <option value="01">My skill is Html</Html></option>
+            <option value="02">My skill is VS code</option>
+            <option value="03">My skill is Git</option>
+            <option disabled value="04">My skill is CSS</option>
+        </select>
+    </p>
+    <p>
+        <textarea  cols="30" rows="10" placeholder="type text"></textarea>
+    </p>
+    <p>
+        <label for="self">Self delivery</label>
+        <input type="radio" name="delivery" id="self">
+
+        <label for="np">NP delivery</label>
+        <input type="radio" name="delivery" id="np">
+
+        <label for="UA">UA post </label>
+        <input type="radio" name="delivery" id="UA">
+    </p>
+    <p>
+        <label for="car">Car</label>
+        <input type="checkbox" name="car" id="car">
+
+        <label for="bus">Bus</label>
+        <input type="checkbox" name="bus" id="bus">
+
+        <label for="bycicle">Bycicle</label>
+        <input type="checkbox" name="bycicle" id="bycicle">
+    </p>
+        <input type="submit" value="Send form">
+        <button>
+            Button 
+        </button>
+    </form>
+</body>
+</html>

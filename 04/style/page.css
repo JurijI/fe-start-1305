@@ -1,0 +1,446 @@
+
+
+body{
+    display: flex;
+    flex-direction: column; /* Устанавливаем вертикальное направление для body */
+    align-items: center;/* Центрируем элементы по горизонтали */
+    justify-content: center;/* Центрируем элементы по вертикали */
+    background-color : #f4f4f4; 
+     margin: 0;
+    padding: 0; 
+
+}  
+.container{  
+     /* стили для контейнера*/
+    background-color: rgb(223, 216, 216);
+    position: relative; /* Относительное позиционирование для дочерних элементов */
+    width: 916px;
+    height: 5820px; /* Автоматическая высота */
+    margin: 0; /* Убираем отступы для container */
+    padding: 0; /* Убираем отступы для container */
+   }
+   .logo-wrapper{
+     /* стили для блока с логотипом и заголовком*/
+    display: flex; /* Размещаем элементы рядом */
+    flex-direction: column; /* Размещаем элементы в столбец */
+     align-items: center; /*Центрируем элементы по горизонтали */
+     width: 100%; /*Занимаем всю ширину container */
+     margin-top: -20px; /*Отступ сверху */
+     margin-bottom: 20px; /* Отступ снизу */
+    }   
+
+.mait{ 
+    /* HW 2 */
+/* position: absolute;
+width: 636px;
+height: 24px;
+left: 141px;
+right: 139px;
+top: 18px;
+bottom: 5778px; */
+    color: rgb(0, 0, 0);
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+ /* Отступы для "HW 2" */
+ /* padding: 24px 0px; */
+ margin:30px;/* Убираем отступы */
+/* 141px 5778px 139px; */
+}
+.hero-title{
+    /* ПЛАНЕТИ СОНЯЧНОЇ СИСТЕМИ */
+/* position: absolute;
+width: 636px;
+height: 48px;
+left: 141px;
+right: 139px;
+top: 42px;
+bottom: 5730px; */
+ color: rgb(0, 0, 0);
+font-size: 40px;
+font-weight: 400;
+line-height: 48px;
+ /* Отступы для "ПЛАНЕТИ СОНЯЧНОЇ СИСТЕМИ" */
+ text-align: center; 
+ /* padding: 40px 0px; */
+ margin: 0px;/* Убираем отступы */
+ /* Разделение текста на строки */
+ /* white-space: pre-line;
+  
+/* margin: 42px 139px 5730px 141px ; */
+/* padding: 42px 139px 40px 141px; */
+
+}
+.banner-image-1{
+    /* меркурій */
+position: absolute;
+width: 300px;
+height: 300px;
+left: 309px;
+right: 307px;
+top: 155px;
+bottom: 5300px;
+/* text-align: center;
+margin-top: 50px; */
+    /* margin-top: 145px; Устанавливаем отступ сверху для первого изображения */
+   /* margin-left: 309px;
+   margin-right: 307px; */
+    /* margin-bottom: 0px; Отступ снизу */
+   }
+
+.feature{   /* стили для текстовых блоков всех планет*/
+    color: rgb(0, 0, 0);
+font-size: 32px;/* размер шрифта для названий планет */
+font-weight: 400;
+line-height: 39px;/* межстрочный интервал для названий планет */
+text-align: center;
+ /* Точное позиционирование */
+ position: absolute;
+}
+.planetName{
+ width: 148px;/* ширина для названий планет */
+ height: 39px;/* высота для названий планет */
+ /* left: 25px;
+ bottom: 5335px; */
+
+}
+.banner-image-2{
+    /* венера */
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 25px;
+    right: 491px;
+    top: 613px;
+    bottom: 4807px;
+    
+    }
+    .banner-image-3{
+        /* земля */
+    position: absolute;
+    width: 420px;
+    height: 400px;
+    left: 473px;
+    right: 23px;
+    top: 1177px;
+    bottom: 4243px;
+    
+    }
+    .banner-image-4{
+        /* марс */
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 259px;
+    right: 257px;
+    top: 1722px;
+    bottom: 3698px;
+    
+    }
+    .banner-image-5{
+        /*Юпітер */
+    position: absolute;
+    width: 866px;
+    height: 465px;
+    left: 26px;
+    right: -26px;
+    top: 2236px;
+    bottom: -2234px;
+    }
+    .banner-image-6{
+        /* сатурн */
+    position: absolute;
+    width: 811px;
+    height: 420px;
+    left: 54px;
+    right: 51px;
+    top: 2856px;
+    bottom: 2544px;
+    
+    }
+    .banner-image-7{
+        /* уран */
+    position: absolute;
+    width: 450px;
+    height: 457.88px;
+    left: 25px;
+    right: 441px;
+    top: 3476px;
+    bottom: 1886.12px;
+    
+    }
+    .banner-image-8{
+        /* нептун */
+    position: absolute;
+    width: 454px;
+    height: 452px;
+    left: 439px;
+    right: 23px;
+    top: 4077px;
+    bottom: 1291px;
+    
+    }
+    .feature{/* Cтили для блоков с текстом всех планет */
+        width: 868px; /* ширина для текстовых блоков всех планет */
+        height: 57px; /* высота для текстовых блоков всех планет */
+       }
+
+
+.feature-text{
+    
+     font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+     }
+
+     .feature-1{
+
+    position: absolute;
+    height: 57px;
+    left: 25px;
+    right: 23px;
+    top: 494px;
+    bottom: 5269px;
+    }
+
+.feature-2{
+    
+position: absolute;
+left: 25px;
+right: 23px;
+top: 1074px;
+bottom: 4689px;
+  
+}
+.feature-3{
+   
+position: absolute;
+left: 25px;
+right: 23px;
+top: 1634px;
+bottom: 4129px;
+
+}
+.feature-4{
+   
+position: absolute;
+left: 25px;
+right: 23px;
+top: 2170px;
+bottom: 3593px;
+
+}
+.feature-5{
+   
+position: absolute;
+left: 25px;
+right: 23px;
+top: 2751px;
+bottom: 3012px;
+
+}
+.feature-6{
+    
+position: absolute;
+height: 95px;
+left: 25px;
+right: 23px;
+top: 3333px;
+bottom: 2392px;
+
+}
+.feature-7{
+    
+position: absolute;
+height: 57px;
+left: 25px;
+right: 23px;
+top: 3966px;
+bottom: 1797px;
+  
+
+}
+.feature-8{
+    
+position: absolute;
+height: 76px;
+left: 25px;
+right: 23px;
+top: 4565px;
+bottom: 1179px;
+
+
+}
+.planetName-1{
+    /*  Меркурій*/
+     color: black;
+     font-family: Inter;
+     font-size: 32px;
+     font-weight: 400;
+     line-height: 39px;
+     text-align: center;
+     position: absolute;
+     width: 148px;
+     height: -250px; 
+    left: 300px;
+     right: 743px;
+     bottom: 5300px; 
+    }
+
+.planetName-2{
+    /* Венера*/
+     color: black;
+     font-family: Inter;
+     font-size: 32px;
+     font-weight: 400;
+     line-height: 39px;
+     text-align: center;
+     position: absolute;
+     width: 148px;
+     height: -500px; 
+    left: 300px;
+     right: 343px;
+     bottom: 4750px; 
+    }
+
+.planetName-3{
+/* Земля */
+    color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+
+text-align: center;
+     position: absolute;
+width: 148px;
+height: 39px;
+left: 385px;
+right: 383px;
+top: 1586px;
+bottom: 4195px;
+
+
+}
+
+
+
+
+.planetName-4{
+    /* Марс */
+   color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0%;
+text-align: center;
+    position: absolute;
+width: 93px;
+height: 39px;
+left: 25px;
+right: 798px;
+top: 2122px;
+bottom: 3659px;
+
+}
+
+
+.planetName-5{
+    /* Юпітер */
+    color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+text-align: center;
+     position: absolute;
+width: 120px;
+height: 39px;
+left: 399px;
+right: 397px;
+top: 2703px;
+bottom: 3078px;
+
+}
+
+
+.planetName-6{
+    /* Сатурн */
+position: absolute;
+width: 120px;
+height: 39px;
+left: 399px;
+right: 397px;
+top: 3285px;
+bottom: 2496px;
+     color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.planetName-6{
+    /* Уран */
+position: absolute;
+width: 120px;
+height: 39px;
+left: 399px;
+right: 397px;
+top: 3285px;
+bottom: 2496px;
+     color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0%;
+text-align: center;
+
+}
+.planetName-7{
+    /* Уран */
+position: absolute;
+width: 115px;
+height: 39px;
+left: 400px;
+right: 777px;
+top: 3900px;
+bottom: 1266px;
+     color: rgb(0, 0, 0);
+
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+
+text-align: center;
+
+}
+
+
+
+.planetName-8{
+    /* Нептун */
+position: absolute;
+width: 115px;
+height: 39px;
+left: 24px;
+right: 777px;
+top: 4515px;
+bottom: 1266px;
+     color: rgb(0, 0, 0);
+
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+
+text-align: center;
+
+}
+
+

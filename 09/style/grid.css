@@ -1,7 +1,528 @@
-
 * {
     box-sizing: border-box;
 }
 
-main>header+aside+section+footer
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
 
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+  
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    padding: 75px 82px 44px 82px;
+    width: auto;
+  
+}
+
+
+.content-1,
+.content-2 {
+    display: grid;
+    grid-template-columns: 209px 1fr;
+    gap: 40px;
+      /* Устанавливаем отступы для всех сторон */
+    /* width: 860px;
+   height: 374px; */
+    
+
+}
+
+.content-1 {
+    grid-template-areas:
+        "user-card-1 about-1"
+        "user-card-1 goals-frustrations-1";
+
+}
+
+.content-2 {
+    grid-template-areas:
+        "user-card-2 about-2"
+        "user-card-2 goals-frustrations-2";
+}
+
+#user-card-1 {
+    grid-area: user-card-1;
+}
+
+#about-1 {
+    grid-area: about-1;
+}
+
+#goals-frustrations-1 {
+    grid-area: goals-frustrations-1;
+}
+
+#user-card-2 {
+    grid-area: user-card-2;
+   
+}
+
+#about-2 {
+    grid-area: about-2;
+}
+
+#goals-frustrations-2 {
+    grid-area: goals-frustrations-2;
+}
+
+
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 209px;
+    height: 321px;
+}
+
+
+
+
+.user-card .avatar img {
+    border-radius: 0.625rem;
+    width: 100%;
+    /* width: 209px;
+    height: 321px; */
+    object-fit: cover;
+}
+
+.user-card .name {
+    position: absolute;
+    left: 0.56rem;
+    top: 11.8rem;
+    bottom: 0.687rem;
+    right: 0.56rem;
+    /* width: 44%; */
+    height: 124px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    box-shadow: 0 0.312rem 1.875rem 0 rgba(0, 0, 0, 0.25);
+
+    /* backdrop-filter: blur(4px);
+
+    justify-content: flex-start;
+    align-items: flex-start; */
+
+
+}
+
+.user-card .name h1 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+
+}
+
+.user-card .name h2 {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgb(249, 203, 40);
+    line-height: 1.9;
+}
+
+.user-card .name p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+
+}
+
+
+.about {
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+
+
+}
+
+.about h3 {
+    margin: 0;
+    align-self: flex-start;
+    margin-bottom: -10px;
+}
+
+.profile nav {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: -10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgb(241, 239, 254);
+    margin-bottom: 10px;
+
+
+
+
+}
+
+.profile h4 {
+    margin: 0.5rem 0;
+    color: rgba(12, 13, 31, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.profile p {
+    color: rgb(12, 13, 31);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+
+
+
+.content-block-1 {
+    width: 611px;
+    /* height: 374px; */
+}
+
+.content-block-2 {
+    width: 611px;
+    /* height: 374px; */
+    /* margin-top: 40px; */
+}
+
+
+.goals-frustrations {
+    grid-area: goals-frustrations;
+    display: flex;
+    gap: 68px;
+}
+
+
+
+.goals h2,
+.frustrations h2 {
+    margin-top: 0;
+    color: rgb(12, 13, 31);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.goals-list,
+.frustrations-list {
+    background: rgb(241, 239, 254);
+    border-radius: 0.5rem;
+    /* 8px / 16 = 0.5rem */
+    padding: 0.5rem;
+    /* 16px / 16 = 1rem */
+    margin-top: 1rem;
+    display: grid;
+    /* gap: 0.5rem; */
+    color: rgb(12, 13, 31);
+    font-size: 0.75rem;
+    font-weight: 400;
+    width: 271.5px;
+
+}
+
+.goals-list .goal,
+.frustrations-list .frustration {
+    display: flex;
+    align-items: baseline;
+    /* Для выравнивания иконок */
+    gap: 0.5rem;
+    line-height: 1.2;
+    /* Для выравнивания текста */
+}
+
+.goals-list .goal .icon-check,
+.frustrations-list .frustration .icon-xmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.goals-list .goal .icon-check .fa-solid,
+.frustrations-list .frustration .icon-xmark .fa-solid {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goals-list .goal .icon-check .fa-solid {
+    color: #FFFFFF;
+    background-color: rgb(39, 174, 96);
+}
+
+.frustrations-list .frustration .icon-xmark .fa-solid {
+    color: rgb(241, 239, 254);
+    background-color: #EB5757;
+}
+
+
+.goal,
+.frustration {
+
+    padding: 0.5rem;
+    /* 8px / 16 = 0.5rem */
+    background-color: transparent;
+    border-radius: 0.25rem;
+    /* 4px / 16 = 0.25rem */
+    font-size: 0.75rem;
+    /* 12px / 16 = 0.75rem */
+    font-weight: 400;
+    color: #0c0d1f;
+
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+       
+
+    }
+
+    .content-1,
+     .content-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+    }
+
+    .content-block-1,
+    .content-block-2 {
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 100%;
+        
+    }
+
+    .user-card,
+    .about,
+    .profile,
+    .goals-frustrations,
+    .goals,
+    .frustrations {
+        width: 100%;
+    
+    }
+
+
+    .about {
+        margin-top: 250px;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+    }
+
+    .about h3 {
+       margin-bottom: 8px;
+       display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+
+    .profile {
+        max-width: 100%;
+    }
+
+
+    .profile p {
+        margin: 10px 0;
+    }
+
+    .goals-frustrations {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+    .avatar img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+
+    .user-card .name {
+        position: absolute;
+        transform: none;
+        /* width: 100%; */
+        padding: 1rem;
+        top: 129%;
+        margin: auto;
+    gap: 0.3rem;
+        
+    }
+
+    .profile nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .goals-list,
+    .frustrations-list {
+        width: 100%;
+       
+    }
+    .goals h2,
+    .frustrations h2 {
+        display: flex;
+        align-items: center;
+    flex-direction: column;
+    }
+   
+}
+
+@media (max-width: 375px) {
+
+    main {
+        width: 100%;
+       
+        
+    }
+    .user-card{
+        display: flex;
+    flex-direction: column;
+        position: relative;
+    }
+
+    .user-card .avatar img {
+        width: 100%;
+        height: auto;
+        
+
+    }
+
+   
+
+    .user-card .name {
+        position: absolute;
+        width: 95%;
+        padding: 1rem;
+        top: 136%;
+       
+    }
+
+    .profile nav {
+        gap: 0.3rem;
+        flex-direction: column;
+    }
+
+    .about {
+        align-items: center;
+    }
+
+    
+
+    .goals-list,
+    .frustrations-list {
+        width: 100%;
+    }
+
+    .goal,
+    .frustration {
+        line-height: 1.2;
+    }
+
+}
+@media (max-width: 810px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+       
+
+    }
+
+    .content-1,
+     .content-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+    }
+
+    .content-block-1,
+    .content-block-2 {
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 100%;
+        
+    }
+
+
+    .avatar img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+
+}
+/* 
+@media (max-width: 428px) {
+
+    .about {
+        margin-top: 278px;
+    }
+
+
+} */
